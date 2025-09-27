@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thiêu Mẫn - Trang chủ game</title>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ======= TOPBAR ======= -->
+  <!-- ===== NAV BAR (dải đỏ-navy giống mẫu) ===== -->
   <header class="topbar">
+    <div class="topbar-strip"></div>
     <div class="container inner">
       <nav class="nav nav-left">
         <a href="#">Tin tức</a>
@@ -24,123 +25,115 @@
         <a href="#">Hướng dẫn</a>
       </nav>
 
-      <!-- Logo nhỏ + hotline để giống bản gốc -->
-      <div class="brand">
-        <img src="assets/image7.png" alt="GOSU" class="brand-img" />
-      </div>
+      <div class="brand">Cửu Âm Chân Kinh</div>
+
       <nav class="nav nav-right">
-        <a href="#"><img src="assets/image8.png" alt="Hotline 1900 7189" class="hotline-img" /></a>
+        <a href="#">Tải game</a>
+        <a href="#">Tài khoản</a>
+        <a href="#">Hỗ trợ</a>
+        <a href="#">Cộng đồng</a>
       </nav>
     </div>
-    <div class="topbar-strip"></div>
   </header>
 
-  <!-- ======= HERO (banner lớn) ======= -->
-  <section class="hero hero--bg">
-    <div class="container wrap">
-      <div>
-        <span class="ribbon">✨ Tân xuân Cửu Âm – Tranh đoạt mỹ nhân</span>
-        <h1 class="hero-title">Thiêu Mẫn</h1>
-        <p class="hero-sub">Thế giới võ hiệp mở ra trước mắt – khởi hành cùng bằng hữu để chinh phục giang hồ.</p>
-      </div>
-      <div class="hero-figure">
-        <img class="lantern" src="assets/image10.png" alt="Đèn lồng" />
-      </div>
-    </div>
+  <!-- ===== HERO (banner lớn toàn màn hình) ===== -->
+  <section class="hero">
+    <img class="hero-bg" src="assets/image2.jpg" alt="Banner Thiêu Mẫn" />
   </section>
 
-  <!-- ======= HUB (launcher + tin tức) ======= -->
-  <section class="hub container">
-    <div class="grid">
-      <!-- Trái -->
-      <div>
-        <!-- Launcher -->
-        <div class="launcher">
-          <div class="top">
-            <!-- Ô tải game dùng ảnh -->
-            <div class="download-card download-by-image">
-              <a class="img-link" href="#" aria-label="Tải game">
-                <img src="assets/image3.jpg" alt="Tải Game">
-              </a>
-            </div>
-
-            <!-- 3 nút lớn (giữ kiểu hiện đại, bạn có thể thay bằng ảnh 2-nút image4.png nếu muốn) -->
-            <div class="cta-group">
-              <a class="btn primary" href="#">Đăng ký</a>
-              <a class="btn" href="#">Nạp thẻ</a>
-              <a class="btn gold" href="#">Nhận quà</a>
-            </div>
+  <!-- ===== KHỐI CHÍNH (giống khung trắng ở giữa) ===== -->
+  <main class="container">
+    <div class="board">
+      <div class="board__left">
+        <!-- Hàng đầu: Tải Game + Banner Tháng 03 -->
+        <div class="row row-download">
+          <div class="tile tile--download">
+            <img src="assets/image3.jpg" alt="Tải Game" />
           </div>
-
-          <!-- Dải 3 banner: Lệnh / VIP / Giftcode -->
-          <div class="ribbon-tools-img">
-            <img src="assets/image6.png" alt="Cửu Âm Lệnh • Vinh danh VIP • Giftcode">
+          <div class="tile tile--promo">
+            <img src="assets/image14.jpg" alt="Chuỗi sự kiện tháng 03" />
           </div>
         </div>
 
-        <!-- Tin tức -->
+        <!-- Hàng thứ 2: Đăng ký / Nạp thẻ (dùng nút CSS để đồng bộ kích thước) -->
+        <div class="row row-cta">
+          <a class="cta cta--register" href="#">Đăng Ký</a>
+          <a class="cta cta--recharge" href="#">Nạp Thẻ</a>
+        </div>
+
+        <!-- Hàng thứ 3: 3 banner Lệnh / VIP / Giftcode -->
+        <div class="row row-badges">
+          <img src="assets/image6.png" alt="Cửu Âm Lệnh • VIP • Giftcode" />
+        </div>
+
+        <!-- Tabs & Tin tức -->
         <div class="news">
-          <div class="news-tabs">
-            <span class="chip is-active">Tin mới</span>
-            <span class="chip">Sự kiện</span>
-            <span class="chip">Hướng dẫn</span>
-            <span class="chip">Cộng đồng</span>
+          <div class="tabs">
+            <button class="tab is-active">Tin mới</button>
+            <button class="tab">Sự kiện</button>
+            <button class="tab">Hướng dẫn</button>
+            <button class="tab">Cộng đồng</button>
           </div>
+
           <div class="news-list">
             <article class="news-item">
               <img src="assets/image11.jpg" alt="Đăng nhập nhận quà">
-              <div>
-                <time>23h59 • 17/03/2022</time>
-                <h4>Kết thúc sự kiện đăng nhập nhận quà</h4>
-                <p>Chuỗi sự kiện đón chào tân thủ khép lại – các hiệp khách đừng quên nhận phần thưởng nhé!</p>
+              <div class="news-body">
+                <h4>23h59 ngày 17/03/2022, Kết thúc sự kiện đăng nhập nhận quà</h4>
+                <p>Các hiệp khách đừng quên vào Cửu Âm Chân Kinh nhận đủ phần quà hấp dẫn nhé. Hạn tham gia!</p>
               </div>
             </article>
 
             <article class="news-item">
-              <img src="assets/image14.jpg" alt="Chuỗi sự kiện tháng 03">
-              <div>
-                <time>Tháng 03/2022</time>
-                <h4>Chuỗi sự kiện tháng 03</h4>
-                <p>Tưng bừng quà tặng, hoạt động và ưu đãi nạp. Chuẩn bị hành hiệp giang hồ cùng bang hội!</p>
+              <img src="assets/image12.png" alt="Sự kiện">
+              <div class="news-body">
+                <h4>Hành tẩu giang hồ, nhận quà cực đã</h4>
+                <p>Thu thập Cửu Âm Lệnh và đến gặp NPC để đổi quà. Đừng bỏ lỡ các mốc thưởng hấp dẫn!</p>
               </div>
             </article>
 
             <article class="news-item">
-              <img src="assets/image15.jpg" alt="Kênh thanh toán trực tiếp">
-              <div>
-                <time>Mới</time>
-                <h4>Kênh thanh toán trực tiếp</h4>
-                <p>Thanh toán nhanh chóng, an toàn, chăm sóc đặc biệt – hotline 090.88.77.689.</p>
+              <img src="assets/image14.jpg" alt="Tháng 03">
+              <div class="news-body">
+                <h4>Chuỗi sự kiện tháng 03.2022</h4>
+                <p>Chào tháng mới, chuỗi hoạt động siêu hot kèm ưu đãi nạp hấp dẫn. Cùng khám phá!</p>
               </div>
             </article>
+
+            <div class="news-actions">
+              <a href="#" class="btn-outline">Lên trên</a>
+              <a href="#" class="btn-outline">Xem thêm</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Phải (các khối ảnh tiện ích giống web) -->
-      <aside class="sidebar">
-        <div class="side-card img-block">
-          <img src="assets/image9.png" alt="Bảo điển • Môn phái • Tân thủ • Võ học • PVC-Pet">
+      <!-- Cột phải giống mẫu -->
+      <aside class="board__right">
+        <div class="box">
+          <img src="assets/image5.png" alt="Kỳ bảo • Hỗ trợ • Nạp vàng • Nạp VIP" />
         </div>
 
-        <div class="side-card img-block">
-          <img src="assets/image5.png" alt="Kỳ bảo • Hỗ trợ • Nạp vàng • Nạp VIP">
+        <div class="box">
+          <img src="assets/image8.png" alt="Hotline 1900 7189" />
         </div>
 
-        <div class="side-card img-block">
-          <img src="assets/image16.gif" alt="GOSU Pay">
+        <div class="box">
+          <img src="assets/image9.png" alt="Bảo điển • Môn phái • Tân thủ • Võ học • PVC-Pet" />
         </div>
       </aside>
     </div>
-  </section>
+  </main>
 
-  <!-- Dải mây núi trên footer -->
-  <div class="section-sep"><img src="assets/image1.jpg" alt="Mây núi"></div>
+  <!-- Dải mây núi giống nền cuối trang -->
+  <div class="sep">
+    <img src="assets/image1.jpg" alt="Mây núi" />
+  </div>
 
-  <!-- ======= FOOTER ======= -->
-  <footer class="container">
-    <div><span class="gosu">GOSU</span> • Công ty Cổ phần Truyền thông GOSU</div>
-    <div>Địa chỉ: Tầng 6, Tòa nhà Vạn Đạt, 9 Lê Quý Đôn, Thành phố Huế, Việt Nam</div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <img class="gosu-mark" src="assets/image7.png" alt="GOSU" />
+    <p>Hỗ trợ: Công ty Cổ phần Truyền thông GOSU • Địa chỉ: Tầng 6, Tòa nhà Vạn Đạt, 9 Lê Quý Đôn, Huế, Việt Nam</p>
   </footer>
 </body>
 </html>
