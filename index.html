@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3 Layers - Strict Mapping</title>
+  <link rel="stylesheet" href="layers_v3.css">
+</head>
+<body>
+  <!-- ===== LAYER 1: BACKGROUND (image1 + image2) ===== -->
+  <div class="layer layer1" aria-hidden="true"></div>
+
+  <!-- ===== LAYER 2: CONTENT (image3,4,5,6,7,8,9,11,12,13,14,15,16) ===== -->
+  <div class="layer layer2">
+    <!-- Top bar -->
+    <header class="topbar">
+      <div class="wrap">
+        <nav class="nav">
+          <a href="#">Tin tức</a>
+          <a href="#">Sự kiện</a>
+          <a href="#">Hướng dẫn</a>
+          <a href="#">Download</a>
+          <a href="#">Thư viện</a>
+          <a href="#">Cộng đồng</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero block uses image3 (still) + image16 (gif banner) -->
+    <section class="hero">
+      <div class="wrap hero-wrap">
+        <img class="hero-still" src="image3.jpg" alt="Hero background (image3)">
+        <img class="hero-gif" src="image16.gif" alt="Hero banner (image16)">
+      </div>
+    </section>
+
+    <!-- 3-column content -->
+    <main class="wrap grid">
+      <!-- LEFT -->
+      <aside class="left">
+        <img src="image8.png" class="hotline" alt="Hotline (image8)">
+        <img src="image6.png" class="btn-big" alt="Button (image6)">
+        <div class="row2">
+          <img src="image4.png" alt="Button (image4)">
+          <img src="image5.png" alt="Button (image5)">
+        </div>
+        <div class="row3">
+          <img src="image4.png" alt="Button (image4 again)">
+          <img src="image5.png" alt="Button (image5 again)">
+          <img src="image6.png" alt="Button (image6 again)">
+        </div>
+      </aside>
+
+      <!-- CENTER -->
+      <section class="center">
+        <div class="news-panel">
+          <img src="image13.png" class="strip" alt="Top strip (image13)">
+          <div class="cards">
+            <article class="card">
+              <img src="image11.jpg" alt="thumb (image11)">
+              <div><h3>Đăng nhập nhận quà</h3><p>23h59 ngày 17/03/2022 kết thúc sự kiện...</p></div>
+            </article>
+            <article class="card">
+              <img src="image14.jpg" alt="thumb (image14)">
+              <div><h3>Sự kiện</h3><p>Hành tẩu giang hồ, nhận quà cực đã...</p></div>
+            </article>
+            <article class="card">
+              <img src="image12.png" alt="thumb (image12)">
+              <div><h3>Tháng 03</h3><p>Chuỗi sự kiện tháng 03/2022...</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT -->
+      <aside class="right">
+        <img src="image9.png" class="stack" alt="Stack (image9)">
+        <img src="image15.jpg" class="pay" alt="Payment (image15)">
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="line"></div>
+        <p>© GOSU • Hỗ trợ: <strong>1900 7189</strong></p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ===== LAYER 3: FOREGROUND (image10) ===== -->
+  <div class="layer layer3" aria-hidden="true">
+    <img src="image10.png" class="lantern" alt="Lantern (image10)">
+  </div>
+</body>
+</html>
